@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@mynamespace/some-private-tool':
+        specifier: workspace:*
+        version: link:packages/some-private-tool
       prettier:
         specifier: ^3.5.0
         version: 3.5.3
@@ -127,6 +130,33 @@ importers:
       typescript-eslint:
         specifier: ^8.24.0
         version: 8.25.0(eslint@9.21.0)(typescript@5.7.3)
+
+  packages/some-private-tool:
+    devDependencies:
+      '@mynamespace/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@mynamespace/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@turbo/gen':
+        specifier: ^2.4.0
+        version: 2.4.4(@types/node@22.13.8)(typescript@5.7.3)
+      '@types/node':
+        specifier: ^22.13.0
+        version: 22.13.8
+      '@types/react':
+        specifier: 19.0.8
+        version: 19.0.8
+      '@types/react-dom':
+        specifier: 19.0.3
+        version: 19.0.3(@types/react@19.0.8)
+      eslint:
+        specifier: ^9.21.0
+        version: 9.21.0
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
 
   packages/typescript-config: {}
 

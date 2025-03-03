@@ -1,5 +1,5 @@
 {
-  "name": "deno-private-npm-repro1",
+  "name": "deno-private-npm-repro",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -8,11 +8,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
-    "some-private-tool": "workspace:*",
+    "@mynamespace/some-private-tool": "workspace:*",
     "prettier": "^3.5.0",
     "turbo": "^2.4.4",
     "typescript": "5.7.3"
