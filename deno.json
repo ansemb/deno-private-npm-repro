@@ -1,0 +1,12 @@
+{
+  "workspace": {
+    "members": ["./modules/some-other-tool"]
+  },
+  "tasks": {
+    "hello": "deno run @mynamespace/some-other-tool/index.ts",
+    "hello-rel": "deno run ./modules/some-other-tool/index.ts"
+  },
+  "imports": {
+    "@mynamespace/some-other-tool": "jsr:@mynamespace/some-other-tool"
+  }
+}

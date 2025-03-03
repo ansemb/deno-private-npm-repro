@@ -1,0 +1,7 @@
+{
+  "name": "@mynamespace/some-other-tool",
+  "exports": "./index.ts",
+  "imports": {
+    "@mynamespace/some-private-tool": "npm:@mynamespace/some-private-tool"
+  }
+}

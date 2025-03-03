@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.enablePaths": ["./modules"],
+  "deno.config": "./deno.json"
+}
