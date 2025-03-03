@@ -3,7 +3,8 @@
     "members": ["./modules/some-other-tool"]
   },
   "tasks": {
-    "hello": "deno run @mynamespace/some-other-tool/index.ts",
+    "hello": "deno run @mynamespace/some-other-tool",
+    "hellojsr": "deno run jsr:@mynamespace/some-other-tool",
     "hello-rel": "deno run ./modules/some-other-tool/index.ts"
   },
   "imports": {
